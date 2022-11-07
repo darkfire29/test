@@ -11,28 +11,28 @@ function handlePlay() {
    $video.play()
    $play.hidden = true
    $pause.hidden = false
-   console.log('Click puto')
+   console.log('Reproduciendo')
 }
 
 function handlePause() {
    $video.pause()
    $pause.hidden = true
    $play.hidden = false
-   console.log('Click puto')
+   console.log('Has pausado el video')
 }
 
 $backward.addEventListener('click', handleBackward)
 
 function handleBackward() {
     $video.currentTime = $video.currentTime - 10
-    console.log('tremendo pto xd', $video.currentTime)
+    console.log('Retrocede 10 segundos', $video.currentTime)
 }
 
 $forward.addEventListener('click', handleForward)
 
 function handleForward() {
     $video.currentTime = $video.currentTime + 10
-    console.log('tremendo pto xd', $video.currentTime)
+    console.log('Avanza 10 segundos', $video.currentTime)
 }
 
 const $progress = document.querySelector('#progress')
